@@ -6,6 +6,48 @@
     </head>
     <body>
         <script>
+            //1
+            var nome = prompt("Informe o nome");
+            //2
+            var altura = prompt("Informe sua altura");
+            //3
+            var peso = prompt("Infome seu peso");
+            //4
+            altura = parseFloat(altura);
+            peso = parseFloat(peso);
+            //5
+            altura = altura/100;
+            //6
+            var massa = peso /(altura * altura);
+            //7
+            //a
+            if(massa < 16){
+                document.write("Baixo peso muito grave");
+            ///b
+            }else if(massa >= 16 && massa<=16.99){
+                document.write("Baixo peso grave");
+            //c
+            }else if(massa >= 17 && massa <= 18.49){
+                document.write("Baixo peso");
+            //d
+            }else if(massa >= 18.50 && massa <= 24.99){
+                document.write("Peso normal");
+             //e   
+            }else if(massa >= 25 && massa <= 29.99){
+                document.write("Sobrepeso");
+                //
+            }else if(massa >=30 && massa <= 34.99){
+                document.write("Nome:" + nome + "indice de massa corporal" + massa + "Obsidade grau 1");
+                //g
+            }else if(massa >=35 && massa <= 39.99){
+                document.write("Nome:" + nome + "indice de massa corporal" + massa + "Obsidade grau 2");
+                //h
+            }else(massa >= 40)
+            document.write("Nome:" + nome + "indice de massa corporal" +<br>+ massa + "Obsidade grau 3");
+            
+
+
+            
 
            
         </script>
